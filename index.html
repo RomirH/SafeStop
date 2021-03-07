@@ -6,66 +6,202 @@
   <head>
     <meta charset="utf-8">
     <title>SafeStop</title>
+    <link rel = "stylesheet" href = "styles.css">
+    <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+    <!--<style>
+
+    body{
+      background: rgba(58, 58, 58);
+      color: white;
+      font-family: Helvetica Neue, Helvetica, Arial;
+      margin:0;
+      padding:0;
+    }
+    header{
+      background: black;
+      padding 20px 40px
+
+    }
+    section{
+      background: white;
+      padding 20px 40px;
+    }
+    footer{
+      background: black;
+      padding 20px 40px;
+
+    }
+
+  </style>-->
+
   </head>
 
   <body>
-    <center><h1>KYC Chain</h1>
+    <div class = "headbox">
+      <div class = "buttons">
+        <a href="#" class = "homebutton">Home</a>
+      <!--<div class = "homebutton">
+        <input type = "submit" value = "Home"></div>-->
 
+
+        <a href="#" class = "swapbutton">Swap</a>
+
+
+
+        <a href="#" class = "chartsbutton">Charts</a>
+
+
+
+        <a href="#" class = "walletconnectbutton">Connect to Wallet</a>
+        <!--<button onclick="getElementById('demo').innerHTML=connect_wallet()"> Connect to Wallet </button>-->
+
+      </div>
+
+      <!--<div class = "swapbutton">
+        <input type = "submit" value = "Swap"></div>
+
+      <div class = "chartsbutton">
+        <input type = "submit" value = "Charts"></div>
+
+      <div class = "walletconnectbutton">
+        <input type = "submit" value = "Connect to a Wallet"></div>-->
+
+    </div>
+
+    <div class = "mainbox">
+
+      <div class = "mainboxcontents1">
+        <label>Swap<label> </div>
+
+
+      <div class = "mainboxcontents2">
+        <div class = "mainboxcontents2-1">
+            <label>From<label></div>
+
+          <div class = "mainboxcontents2-2">
+            <input type = "number"></div>
+
+          <div class = "mainboxcontents2-3">
+            <ul>
+              <li> Tokens
+                <ul>
+                  <li> ETHM </li>
+                  <li> USDC </li>
+                  <li> DeFi Pulse Index</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+      </div>
+
+
+      <div class = "mainboxcontents3">
+        <div class = "mainboxcontents3-1"><p>&#8595;<p></div>
+      </div>
+
+
+      <div class = "mainboxcontents4">
+          <div class = "mainboxcontents4-1">
+            <label>To<label>
+          <div class = "mainboxcontents4-2">
+            <input type = "number"></div>
+        </div>
+      </div>
+
+      <div class = "mainboxcontents5">
+        <label>Percent Amount To Swap<label>
+        <input type = "number"></div>
+
+      <div class = "buttons">
+          <a href="#" class = "finalbutton">Connect to Wallet / Execute Swap</a>
+
+          <!--<button onclick="getElementById('demo').innerHTML=swap_function()"> Connect to Wallet / Execute Swap </button>-->
+
+      </div>
+
+    </div>
+
+   <!--<left><h1>KYC Chain</h1>
+
+    Provide your cryptocurrency wallet and token:
     <form action = "take1.php" method = "post">
 
-      <!--<div style = "margin-right:400px"> -->
-
-      <!-- add user wallet -->
-      <right><label>Wallet:<label>
+        <label>Connect Wallet<label>
         <input type="text" name="Wallet">
 
-      <!-- add Token for Contract -->
-      <right><label>Token:<label>
-        <input type="text" name="Token">
+
+        <button onclick="getElementById('demo').innerHTML=connect_wallet()"> Connect Wallet </button>
+
+        <script>
+        function connect_wallet() {
+          document.getElementById("Link to connection).innerHTML = ##connection wallet;
+        }
+        </script>
+
+        <br><br>
 
     </form>
 
-    <br><br>
-    <center>
+    <fieldset>
 
-    <!-- give current price based on token given in form;; price scrape -->
-    <label>Current Price:<label>
-      <input type="text" name="Current Price">
+     <form action = "take2.php" method = "post">
+        <label>Contract:<label>
+          <input type="text" name="Input Contract">
+          <br><br>
+
+      </form> -->
+
+  <!--
+    <script>
+    function getcurrentprice_function() {
+      document.getElementById("Get current price of specified token").innerHTML = ##token current price;
+    }
+    </script>
+
+    <form action = "take3.php" method = "post">
+      <label>From:<label>
+        <input type="text" name="Current Price">
     <br><br>
 
-    <!-- get user's desired strike price for token given in form -->
-    <label>Alert Price:<label>
-      <input type="text" name="Strike Price">
-    <br><br>
+    <label>To:<label>
+      <input type="text" name="Action Price">
+  <br><br>
+  </form>
 
-      <button onclick="getElementById('demo').innerHTML=swap_function()"> Swap value </button>
+      <button onclick="getElementById('demo').innerHTML=swap_function()"> Trade </button>
 
       <script>
       function swap_function() {
-        document.getElementById("Buy/sell mechanism").innerHTML = ##execute buy/sell;
+        document.getElementById("Buy/sell mechanism").innerHTML = ##auto execute buy/sell;
       }
       </script>
 
-    <br><br>
-
-    <button onclick="getElementById('demo2').innerHTML=swap_function()"> </button>
-
-    <script>
-    function autoswap_or_notification() {
-      document.getElementById("user choice").innerHTML = ##take and store whether user wants us to auto swap or just be notified;
-    }
-    </script>
-
-    <button onclick="getElementById('demo3').innerHTML=swap_function()"> Notify user </button>
+    <button onclick="getElementById('demo3').innerHTML=swap_function()"> Notify </button>
 
     <script>
     function notification_function() {
-      document.getElementById("Notify user").innerHTML = ##have to notify user;
+      document.getElementById("Notify user").innerHTML = ##notify user at alert price;
     }
     </script>
-
-
-    </form>
+  </fieldset>
+-->
 
   </body>
+
+  <script>
+  function swap_function() {
+    document.getElementById("Buy/sell mechanism").innerHTML = ##auto execute buy/sell;
+  }
+
+  function getcurrentprice_function() {
+    document.getElementById("Get current price of specified token").innerHTML = ##token current price;
+  }
+
+  function connect_wallet() {
+    document.getElementById("Link to connection).innerHTML = ##connection wallet;
+  }
+
+  </script>
+
 </html>
