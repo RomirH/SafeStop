@@ -1,5 +1,5 @@
 body {
-  background-color: #272e3b;
+  background-color: #a2b8e0;
   font-family:'Optima', sans-serif;
   text-decoration: none;
   font-weight: normal;
@@ -194,7 +194,7 @@ body {
   padding: 10px;
   top: 360px;
   left: 125px;
-  width: 180px;
+  width: 260px;
   height: 10px;
   font-size: 14px;
 }
@@ -205,9 +205,9 @@ body {
   font-weight: bold;
   position: absolute;
   padding: 10px;
-  top: 440px;
-  left: 60px;
-  width: 265px;
+  top: 70px;
+  right: 60px;
+  width: 220px;
   height: 30px;
 
   border: 0.5px solid white;

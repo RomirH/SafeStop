@@ -109,18 +109,18 @@
         </div>
       </div>
 
-      <div class = "mainboxcontents5">
-        <label>Percent Amount To Swap<label>
-        <input type = "number"></div>
-
-      <div class = "buttons">
-          <a href="#" class = "finalbutton">Connect to Wallet / Execute Swap</a>
+        <div class = "mainboxcontents5">
+          <form action="/action_page.php">
+            <div class = "buttons">
+             <label for="vol"> Percent to Swap (0-100):</label>
+             <input type="range" id="vol" name="vol" min="0" max="100">
+             <a href="#" class = "finalbutton">Connect to Wallet / Execute Swap</a>
+           </form>
 
           <!--<button onclick="getElementById('demo').innerHTML=swap_function()"> Connect to Wallet / Execute Swap </button>-->
-
+          <div>
       </div>
-
-    </div>
+</div>
 
    <!--<left><h1>KYC Chain</h1>
 
