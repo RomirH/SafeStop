@@ -59,6 +59,28 @@ body {
   border-radius: 10px;
 }
 
+.headboxcontents1-1{
+  background-color: #1a1f29;
+  position: absolute;
+  height: 50px;
+  width: 400px;
+
+  font-weight: bold;
+  padding: 10px;
+  top: 120%;
+  left: 33.2%;
+  border: 1px solid #1a1e24;
+  border-radius: 20px;
+}
+
+.headboxcontents1-2{
+  background-color: #1a1f29;
+  position: absolute;
+
+  font-weight: normal;
+  padding: 5px;
+}
+
 /*.hr{
   border: none;
   height:1px
@@ -75,7 +97,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -35%);
   height: 500px;
   width: 400px;
 
@@ -125,9 +147,12 @@ body {
 
 .mainboxcontents2-3{
   width: 20px;
-  margin: 0 auto;
+  padding-left: 300px;
+
+  font-size: 12px;
 }
 
+/*
 .mainboxcontents2-3 ul{
   list-style: none;
   margin-top: 2%
@@ -143,6 +168,7 @@ body {
   color: white;
   position: relative;
 }
+*/
 
 .mainboxcontents3{
   background-color: #1a1e24;
@@ -186,6 +212,14 @@ body {
   position: absolute;
   padding: 5px;
   top: 40px;
+}
+
+.mainboxcontents4-3{
+  width: 20px;
+  padding-left: 300px;
+  padding-top: 18px;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 .mainboxcontents5{
