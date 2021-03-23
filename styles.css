@@ -1,10 +1,10 @@
 body {
-  background-color: #a2b8e0;
-  font-family:'Optima', sans-serif;
+  background-color: #272e3b;
+  font-family: 'Consolas', monaco, monospace;
   text-decoration: none;
   font-weight: normal;
-  color: white;
-  font-size: 1.1em;
+  color: #e1e5ed;
+  font-size: 0.9em;
 }
 
 .headbox{
@@ -15,13 +15,13 @@ body {
   left: 0;
   height: 80px;
   width: 100%;
-  border-bottom: 0.1px solid #1a1f29;
+  border-bottom: 0.1px solid white;//#a2b8e0
 }
 
 .homebutton{
   /*background-color: #272e3b*/;
   text-decoration: none;
-  color: white;
+  color: #e1e5ed;
   position: absolute;
   padding: 10px;
   top: 20px;
@@ -60,24 +60,26 @@ body {
 }
 
 .headboxcontents1-1{
-  background-color: #1a1f29;
+  background-color: #1a1e24;
   position: absolute;
-  height: 50px;
+  height: 60px;
   width: 400px;
 
   font-weight: bold;
-  padding: 10px;
-  top: 120%;
+  padding: 5px;
+  top: 150%;
   left: 33.2%;
   border: 1px solid #1a1e24;
   border-radius: 20px;
 }
 
 .headboxcontents1-2{
-  background-color: #1a1f29;
+  background-color: #1a1e24;
   position: absolute;
 
   font-weight: normal;
+  top: 25%;
+  left: 5%;
   padding: 5px;
 }
 
@@ -92,13 +94,34 @@ body {
   background-color: #1a1e24;
 }*/
 
+
+.headboxcontents1-4{
+  background-color: #1a1e24;
+  position: absolute;
+
+  font-weight: normal;
+  /*padding: 5px;*/
+  top: 20px;
+  right: 200px;
+}
+
+
+.contractaddressbutton{
+  text-decoration: none;
+  color: white;
+  position: absolute;
+  padding: 5px;
+  top: 20%;
+  left: 80%;
+}
+
 .mainbox{
   background-color: #1a1e24;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -35%);
-  height: 500px;
+  height: 420px;
   width: 400px;
 
   padding: 10px;
@@ -120,21 +143,21 @@ body {
   background-color: #1a1e24;
   position: absolute;
   padding: 10px;
-  top: 80px;
+  top: 60px;
   left: 20px;
   width: 350px;
-  height: 80px;
+  height: 50px;
 
-  border: 1px solid #272e3b;
-  border-radius: 20px;
+  /*border: 1px solid #272e3b;
+  border-radius: 20px;*/
 }
 
 .mainboxcontents2-1{
   background-color: #1a1e24;
   position: absolute;
   padding: 10px;
-  top: 5px;
-  font-size: 14px;
+  top: 0px;
+  font-size: 12px;
 }
 .mainboxcontents2-2{
   border: none;
@@ -142,13 +165,13 @@ body {
   background-color: #1a1e24;
   position: absolute;
   padding: 5px;
-  top: 40px;
+  top: 35px;
 }
 
 .mainboxcontents2-3{
   width: 20px;
   padding-left: 300px;
-
+  padding-top: 30px;
   font-size: 12px;
 }
 
@@ -173,23 +196,28 @@ body {
 .mainboxcontents3{
   background-color: #1a1e24;
   position: absolute;
-  top: 180px;
+  top: 120px;
   left: 200px;
   width: 1px;
-  height: 1px;
+  height: 10px;
 }
 
 .mainboxcontents3-1{
-  color: white;
+  color: gray;
+  font-weight: normal;
+  font-size: 22px;
   position: absolute;
-  height: 4px;
+
+  /*border-top: 3px solid white;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;*/
 }
 
 .mainboxcontents4{
   background-color: #1a1e24;
   position: absolute;
   padding: 10px;
-  top: 230px;
+  top: 180px;
   left: 20px;
   width: 350px;
   height: 80px;
@@ -203,7 +231,7 @@ body {
   position: absolute;
   padding: 10px;
   top: 5px;
-  font-size: 14px;
+  font-size: 12px;
 }
 .mainboxcontents4-2{
   border: none;
@@ -211,14 +239,15 @@ body {
   background-color: #1a1e24;
   position: absolute;
   padding: 5px;
-  top: 40px;
+  top: 35px;
+  left: -0.01%;
 }
 
 .mainboxcontents4-3{
   width: 20px;
   padding-left: 300px;
-  padding-top: 18px;
-  font-size: 25px;
+  padding-top: 35px;
+  font-size: 20px;
   font-weight: bold;
 }
 
@@ -226,11 +255,11 @@ body {
   background-color: #1a1e24;
   position: absolute;
   padding: 10px;
-  top: 360px;
+  top: 300px;
   left: 125px;
   width: 260px;
   height: 10px;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .finalbutton{
