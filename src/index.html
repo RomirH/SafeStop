@@ -26,6 +26,7 @@
 
   </style>
 
+
   </head>
 
   <body>
@@ -80,14 +81,12 @@
                 <!--<div class = "headboxcontents1-3">
                   <input type = "text"></input>
                 </div>
-
               </form>
               -->
 
                 <!--
                 <div class = "headboxcontents1-4">
                   <div class ="buttons">
-
                     <a href="#" class = "contractaddress" onclick="getElementById('demo').innerHTML=swap_function()">Give Address</a> </div>
 -->
                   <!--
@@ -116,7 +115,7 @@
             <label>Current Price<label></div>
 
           <div class = "mainboxcontents2-2">
-            <input type = "text" inputmode = "numeric" placeholder=" 0.0"></div>
+            <input type = "number" id="current_price" inputmode = "numeric" placeholder=" 0.0" value="15"></div>
             <!--<input type = "number" placeholder="0.0" step = "0.0001"></div>-->
 
           <!--<div class = "mainboxcontents2-3">
@@ -146,7 +145,7 @@
           <div class = "mainboxcontents4-1">
             <label>Alert Price<label>
           <div class = "mainboxcontents4-2">
-            <input type = "text" inputmode = "numeric" placeholder=" 0.0"></div>
+            <input type = "number" id="alert_price" inputmode = "numeric" placeholder=" 0.0" value="10"></div>
             <!--<input type = "number" placeholder="0.0" step = "0.0001"></div>-->
         </div>
 
@@ -160,7 +159,24 @@
             <div class = "buttons">
              <label for="vol"> Percent to Swap (0-100):</label>
              <input type="range" id="vol" name="vol" min="0" max="100">
-             <a href="#" class = "finalbutton">Connect to Wallet / Execute Swap</a>
+             <a href="#" class="finalbutton1" onclick="buy_function()">Buy</a>
+             <a href="#" class="finalbutton2" onclick="sell_function()">Sell</a>
+             <script>
+             var current = document.getElementById("current_price").value;
+             console.log("Current price is: " + current);
+             var alert = document.getElementById("alert_price").value;
+             console.log("Alert price is: " + alert);
+             function buy_function() {
+               if (Number(current) > Number(alert)) {
+                  console.log("Buying...");
+               }
+             }
+             function sell_function() {
+               if (Number(current) < Number(alert)) {
+                  console.log("Selling...");
+               }
+             }
+             </script>
            </form>
 
           <!--<button onclick="getElementById('demo').innerHTML=swap_function()"> Connect to Wallet / Execute Swap </button>-->
@@ -169,33 +185,23 @@
 </div>
 
    <!--<left><h1>KYC Chain</h1>
-
     Provide your cryptocurrency wallet and token:
     <form action = "take1.php" method = "post">
-
         <label>Connect Wallet<label>
         <input type="text" name="Wallet">
-
-
         <button onclick="getElementById('demo').innerHTML=connect_wallet()"> Connect Wallet </button>
-
         <script>
         function connect_wallet() {
           document.getElementById("Link to connection).innerHTML = ##connection wallet;
         }
         </script>
-
         <br><br>
-
     </form>
-
     <fieldset>
-
      <form action = "take2.php" method = "post">
         <label>Contract:<label>
           <input type="text" name="Input Contract">
           <br><br>
-
       </form> -->
 
   <!--
@@ -204,27 +210,21 @@
       document.getElementById("Get current price of specified token").innerHTML = ##token current price;
     }
     </script>
-
     <form action = "take3.php" method = "post">
       <label>From:<label>
         <input type="text" name="Current Price">
     <br><br>
-
     <label>To:<label>
       <input type="text" name="Action Price">
   <br><br>
   </form>
-
       <button onclick="getElementById('demo').innerHTML=swap_function()"> Trade </button>
-
       <script>
       function swap_function() {
         document.getElementById("Buy/sell mechanism").innerHTML = ##auto execute buy/sell;
       }
       </script>
-
     <button onclick="getElementById('demo3').innerHTML=swap_function()"> Notify </button>
-
     <script>
     function notification_function() {
       document.getElementById("Notify user").innerHTML = ##notify user at alert price;
@@ -234,20 +234,5 @@
 -->
 
   </body>
-
-  <script>
-  function swap_function() {
-    document.getElementById("Buy/sell mechanism").innerHTML = ##auto execute buy/sell;
-  }
-
-  function getcurrentprice_function() {
-    document.getElementById("Get current price of specified token").innerHTML = ##token current price;
-  }
-
-  function connect_wallet() {
-    document.getElementById("Link to connection).innerHTML = ##connection wallet;
-  }
-
-  </script>
 
 </html>
