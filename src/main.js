@@ -66,6 +66,7 @@ const initialize = () => {
   MetaMaskClientCheck();
 };
 
+
 function getcurrentprice_function()
 {
 }
@@ -107,7 +108,6 @@ return(
     </head>
 
     <body>
-
       //<div id="root"></div>
 
       <div class = "headbox">
@@ -115,8 +115,6 @@ return(
           <a href="#" class = "homebutton">Home</a>
         //*<div class = "homebutton">
           //<input type = "submit" value = "Home"></div>*/
-
-
           /*<a href="#" class = "swapbutton">Swap</a>
           <a href="#" class = "chartsbutton">Charts</a>*/
 
@@ -125,7 +123,6 @@ return(
 
 
         </div>
-
         /*<div class = "swapbutton">
           <input type = "submit" value = "Swap"></div>
         <div class = "chartsbutton">
@@ -203,7 +200,8 @@ return(
               <div class = "buttons">
                <label for="vol"> Percent to Swap (0-100):</label>
                <input type="range" id="vol" name="vol" min="0" max="100">
-               <a href="#" class = "finalbutton">Connect to Wallet / Execute Swap</a>
+               <a href="#" class = "finalbutton1">Buy</a>
+               <a href="#" class = "finalbutton2">Sell</a>
              </form>
 
             <div>
