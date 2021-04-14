@@ -72,22 +72,6 @@ function App() {
     document.getElementById('curr-price').textContent = tokenPriceInUSD
   }
 
-  var current = document.getElementById("current").value;
-  console.log("Current price is: " + current);
-  var alert = document.getElementById("alert").value;
-  console.log("Alert price is: " + alert);
-
-  function buy_function() {
-    if (Number(current) > Number(alert)) {
-       console.log("Buying...");
-    }
-  }
-  function sell_function() {
-    if (Number(current) < Number(alert)) {
-       console.log("Selling...");
-    }
-  }
-
 
   return (
 
